@@ -57,6 +57,7 @@ if st.button("Analyze Report"):
                 3. Standard Range: (Extract the normal reference range)
                 4. Status: (Write '🟢 Normal', '🔴 High', or '🔴 Low')
                 5. Simple Explanation: (Explain this parameter using everyday layman's terms. Do NOT diagnose diseases. WRITE THIS ENTIRE EXPLANATION IN {target_language.upper()}.)
+                6. Symptoms: If the report shows any abnormal values, briefly list 2-3 common symptoms a person might experience due to those specific levels.   
 
                 Messy text:
                 {messy_ocr_text}
@@ -71,6 +72,7 @@ if st.button("Analyze Report"):
                 # Display the AI's output on the website
                 st.success("✅ Analysis Complete!")
                 st.markdown(response.text)
+                st.warning("Disclaimer: This AI tool is for informational purposes only and does not replace a professional medical diagnosis. Always consult a doctor.")
 
             except Exception as error:
                 st.error(f"⚠️ Error: {error}")
