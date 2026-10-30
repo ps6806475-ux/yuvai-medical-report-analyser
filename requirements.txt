@@ -4,3 +4,4 @@ easyocr
 google-genai
 Pillow
 numpy
+opencv-python-headless
