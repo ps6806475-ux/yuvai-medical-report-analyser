@@ -13,7 +13,12 @@ st.write("Upload a lab report to get a simple explanation in your local language
 api_key = st.secrets["GEMINI_API_KEY"]
 
 # 3. Language Dropdown Menu
-languages = ["English", "Hindi", "Tamil", "Marathi", "Bengali"]
+languages = [
+    "English", "Hindi", "Bengali", "Marathi", "Telugu", "Tamil", 
+    "Gujarati", "Urdu", "Kannada", "Odia", "Malayalam", "Punjabi", 
+    "Assamese", "Maithili", "Santali", "Kashmiri", "Nepali", 
+    "Sindhi", "Dogri", "Konkani", "Manipuri", "Bodo"
+]
 target_language = st.selectbox("🌍 Select Language / भाषा चुनें:", languages)
 
 # 4. Drag-and-Drop Image Uploader
