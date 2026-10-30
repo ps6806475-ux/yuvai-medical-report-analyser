@@ -10,7 +10,7 @@ st.title("🩺 AI Medical Report Analyzer")
 st.write("Upload a lab report to get a simple explanation in your local language.")
 
 # 2. Secure API Key Input
-api_key = st.text_input("Enter your Google Gemini API Key:", type="password")
+api_key = st.secrets["AQ.Ab8RN6JvLrnHxWjIYsMOgWMZ8jg1JnGxgng2GZVr94-RaFumZw"]
 
 # 3. Language Dropdown Menu
 languages = ["English", "Hindi", "Tamil", "Marathi", "Bengali"]
